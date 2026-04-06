@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Um petshop acolhedor">
+    <meta name="author" content="Bruno Nascimento Ribeiro Oliveira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mundo pet</title>
+    
+</head>
+
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo-container"> 
+            <img src="Assets/tartaruga icon.png" alt="Ícone de tartaruga" class="logo-icon">
+            <img src="Assets/cachorro icon.png" alt="Ícone de cachorro" class="logo-icon">
+            <img src="Assets/gato icon.png" alt="Ícone de gato" class="logo-icon">
+            <span class="logo-texto">Mundo pet</span>
+        </div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="Serviços.html">Serviços</a></li>
+            <li><a href="Produtos.html">Produtos</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="Sobre_nós.html">Sobre nós</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="secao-contato container">
+        <div class="row">
+            <div class="contato-formulario">
+                <h2>Envie sua mensagem</h2>
+                <form action="#" method="post">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <input type="tel" name="telefone" placeholder="Telefone (opcional)">
+                    <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
+                    <button type="submit" class="botao_azul">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="contato-infos">
+                <h2>Nossos Contatos</h2>
+                <div class="info-item">
+                    <img src="Assets/mapa.jpeg" alt="Endereço">
+                    <p>Rua das Patinhas, 123 - Bairro Pet, São Paulo/SP</p>
+                </div>
+                <div class="info-item">
+                    <img src="Assets/telefone.jpeg" alt="Telefone">
+                    <p>(11) 98765-4321</p>
+                </div>
+                <div class="info-item">
+                    <img src="Assets/email.jpeg" alt="E-mail">
+                    <p>contato@mundopetshop.com.br</p>
+                </div>
+                <div class="redes-sociais">
+                    <h3>Siga-nos:</h3>
+                    <a href="#"><img src="Assets/instagram.jpeg" alt="Instagram"></a>
+                    <a href="#"><img src="Assets/facebook.jpeg" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

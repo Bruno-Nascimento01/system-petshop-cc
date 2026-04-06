@@ -1,0 +1,827 @@
+/* ============================================================
+   1. RESET E CONFIGURAÇÕES GERAIS
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ============================================================
+   UTILITÁRIOS GLOBAIS
+   ============================================================ */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* ============================================================
+   2. CABEÇALHO E NAVEGAÇÃO
+   ============================================================ */
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo-texto {
+    font-weight: 700;
+    font-size: 22px;
+    color: #008080;
+    margin-left: 4px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #008080;
+}
+
+/* ============================================================
+   3. BOTÃO GLOBAL
+   ============================================================ */
+
+.botao_azul {
+    display: inline-block;
+    background-color: #008080;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    margin-top: 24px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao_azul:hover {
+    background-color: #006666;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,128,128,0.3);
+}
+
+/* ============================================================
+   4. HERO — HOME
+   ============================================================ */
+
+.hero {
+    width: 100%;
+    background-color: #fdf8f4;
+}
+
+.hero > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.hero_conteudo {
+    flex: 1;
+}
+
+.hero_conteudo h1 {
+    font-size: 38px;
+    line-height: 1.25;
+    color: #222;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.hero_conteudo p {
+    font-size: 17px;
+    color: #666;
+    max-width: 440px;
+}
+
+.hero_imagens {
+    flex: 1;
+    max-width: 480px;
+}
+
+.hero_imagens img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+/* ============================================================
+   5. CARDS DE SERVIÇOS
+   ============================================================ */
+
+.container_de_quadradinhos {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+
+.Card_serviços {
+    flex: 1;
+    min-width: 220px;
+    background-color: #fff;
+    padding: 36px 28px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Card_serviços:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.Card_serviços img {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px;
+    object-fit: contain;
+}
+
+.Card_serviços h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.Card_serviços p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   6. HERO SERVIÇOS + TABELA
+   ============================================================ */
+
+.hero .Cabeçalho_hero_servicos {
+    text-align: center;
+    padding: 70px 40px 50px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.Cabeçalho_hero_servicos h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #222;
+    margin: 10px 0 14px;
+    line-height: 1.3;
+}
+
+.Cabeçalho_hero_servicos p {
+    color: #777;
+    font-size: 16px;
+}
+
+.tabela-precos {
+    max-width: 900px;
+    margin: 20px auto 70px;
+    padding: 0 40px;
+}
+
+.tabela-precos h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+thead {
+    background-color: #f0fafa;
+}
+
+th {
+    text-align: left;
+    padding: 16px 20px;
+    border-bottom: 2px solid #008080;
+    font-size: 13px;
+    font-weight: 700;
+    color: #008080;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #444;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #fafafa;
+}
+
+.table-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* ============================================================
+   7. PÁGINA DE PRODUTOS
+   FIX: banner estava com max-width limitado
+   ============================================================ */
+
+.banner-hero-produtos {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+.banner-hero-produtos img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    max-height: 380px;
+    object-fit: cover;
+}
+
+.secao-produtos {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+    padding: 0 40px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.card-produto {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.produto-imagem-container {
+    background-color: #fdf8f4;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-imagem-container img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.info-produto h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.info-produto p {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: 700;
+    color: #008080;
+    margin: 14px 0 18px;
+}
+
+.card-produto .botao_azul {
+    margin-top: auto;
+    width: 100%;
+    padding: 12px 0;
+}
+
+/* ============================================================
+   8. PÁGINA DE CONTATO
+   FIX: formulário e infos estavam empilhados verticalmente
+   ============================================================ */
+
+.secao-contato {
+    padding: 70px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Força os filhos diretos lado a lado */
+.secao-contato > .row {
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.contato-formulario,
+.contato-infos {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contato-formulario h2,
+.contato-infos h2 {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+}
+
+.contato-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.contato-formulario input:focus,
+.contato-formulario textarea:focus {
+    border-color: #008080;
+    background-color: #fff;
+}
+
+.contato-formulario textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contato-formulario .botao_azul {
+    margin-top: 4px;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.contato-infos {
+    background-color: #fdf8f4;
+    border-radius: 20px;
+    padding: 36px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.info-item img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.info-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.redes-sociais h3 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.redes-sociais a img {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    object-fit: contain;
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 8px;
+}
+
+.redes-sociais a img:hover {
+    opacity: 0.75;
+    transform: scale(1.1);
+}
+
+/* ============================================================
+   9. PÁGINA SOBRE NÓS
+   FIX: fundo bege ausente, elementos desalinhados
+   ============================================================ */
+
+.hero-sobre-nos {
+    width: 100%;
+    background-color: #fdf8f4;
+}
+
+.hero-sobre-nos .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Garante que o .row dentro do hero-sobre-nos funcione */
+.hero-sobre-nos .container.row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-sobre-nos .hero_conteudo {
+    flex: 1;
+}
+
+.hero-sobre-nos h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.hero-sobre-nos p {
+    font-size: 17px;
+    color: #666;
+}
+
+.hero-sobre-nos .hero_imagens {
+    flex: 1;
+    max-width: 460px;
+}
+
+.hero-sobre-nos .hero_imagens img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+}
+
+.nossa-historia {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 40px;
+}
+
+/* Garante que .row.reverse funcione dentro de nossa-historia */
+.nossa-historia .row {
+    align-items: center;
+    gap: 60px;
+}
+
+.historia-texto,
+.historia-imagem {
+    flex: 1;
+    min-width: 260px;
+}
+
+.historia-texto h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.historia-texto p {
+    margin-bottom: 14px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.historia-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    display: block;
+}
+
+/* ============================================================
+   10. PÁGINA DE PORTFÓLIO
+   FIX: imagens em tamanhos diferentes, grid desorganizado
+   ============================================================ */
+
+.hero-pequeno {
+    text-align: center;
+    padding: 60px 40px 40px;
+    background-color: #fdf8f4;
+    width: 100%;
+}
+
+.hero-pequeno h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.hero-pequeno p {
+    font-size: 16px;
+    color: #777;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.secao-portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px 70px;
+}
+
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.card-portfolio {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-portfolio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* FIX: altura fixa igual em todas as imagens do portfólio */
+.card-portfolio img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+.info-portfolio {
+    padding: 20px 22px 24px;
+    text-align: left;
+    flex: 1;
+}
+
+.info-portfolio h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.info-portfolio p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   11. RESPONSIVIDADE — TABLETS (max-width: 1024px)
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .grid-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================================
+   12. RESPONSIVIDADE — MOBILE (max-width: 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 12px 16px;
+        justify-content: center;
+    }
+
+    .hero > .container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 30px;
+    }
+
+    .hero_conteudo h1 {
+        font-size: 26px;
+    }
+
+    .hero_imagens {
+        max-width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .hero-sobre-nos .container.row {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .container_de_quadradinhos {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 16px;
+    }
+
+    .tabela-precos {
+        padding: 0 20px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .grid-produtos {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .banner-hero-produtos img {
+        max-height: 200px;
+    }
+
+    .secao-contato {
+        padding: 40px 20px;
+    }
+
+    .secao-contato > .row {
+        flex-direction: column;
+    }
+
+    .contato-infos {
+        padding: 24px;
+    }
+
+    .grid-portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .nossa-historia {
+        padding: 40px 20px;
+    }
+
+    .secao-portfolio {
+        padding: 30px 20px 50px;
+    }
+
+    .hero-pequeno {
+        padding: 40px 20px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-pequeno h1 {
+        font-size: 24px;
+    }
+}
