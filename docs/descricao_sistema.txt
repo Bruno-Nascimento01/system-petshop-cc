@@ -1,0 +1,17 @@
+🐾 Descrição do Sistema — Pet Shop
+O sistema gerencia um pet shop que oferece dois segmentos distintos de serviços: serviços estéticos e de hospedagem (banho, tosa e creche) e atendimento veterinário clínico, funcionando de forma integrada numa única plataforma.
+
+👥 Clientes e Animais
+O pet shop cadastra clientes que são responsáveis por um ou mais animais. Cada animal possui um histórico completo no sistema, incluindo espécie, raça, peso e observações relevantes. Um cliente pode realizar agendamentos e compras, sendo o responsável legal pelo animal atendido.
+📅 Agendamentos
+O cliente solicita agendamentos para seus animais. Cada agendamento envolve um único animal e requer um serviço específico — seja estético (banho, tosa) ou veterinário (consulta). Os agendamentos de serviços estéticos e creche são conduzidos por funcionários gerais, enquanto as consultas veterinárias são conduzidas exclusivamente por veterinários.
+👨‍⚕️ Equipe
+A equipe é dividida em dois grupos. Os funcionários gerais executam serviços de estética e creche. Os veterinários realizam consultas clínicas e possuem obrigatoriamente ao menos uma especialidade cadastrada (incluindo clínica geral). Todos os funcionários pertencem a um departamento e suas ações são auditadas pelo sistema.
+🏥 Atendimento Veterinário
+Quando um animal passa por uma consulta, o veterinário registra diagnóstico, tratamento e observações. Cada consulta gera automaticamente um prontuário clínico, que por sua vez alimenta o histórico do animal — permitindo acompanhar toda a vida clínica do pet ao longo do tempo.
+🛁 Serviços
+Os serviços oferecidos são divididos em dois subtipos: estética (com atributo de tipo, como banho ou tosa) e creche (com período e capacidade máxima). Todo agendamento está vinculado a pelo menos um serviço.
+🛒 Vendas e Financeiro
+O pet shop também comercializa produtos como rações, medicamentos e acessórios. Os produtos são fornecidos por fornecedores cadastrados. As vendas geram um registro de faturamento vinculado ao cliente, que pode conter produtos e serviços. O pagamento é realizado através de um método de pagamento escolhido pelo cliente, e cada venda pode ser quitada em uma ou mais transações.
+📊 Auditoria
+Todas as operações de venda são opcionalmente registradas em log de auditoria, identificando o funcionário responsável pela ação, a tabela afetada e a descrição da operação — garantindo rastreabilidade e controle interno.
