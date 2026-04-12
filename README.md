@@ -1,29 +1,29 @@
-# 🐾 Projeto Web Petshop
+# 🐾 Sistema de Gestão Pet Shop - Full Stack
 
-Este é um projeto de desenvolvimento web focado na criação de uma interface para um Petshop. O site foi desenvolvido como parte das atividades práticas do curso de **Análise e Desenvolvimento de Sistemas (ADS)**.
+Este projeto consiste em um sistema integrado para gerenciamento de um Pet Shop, desenvolvido como parte da graduação em **Ciência da Computação**. O objetivo é aplicar conceitos de Engenharia de Software, Modelagem de Dados e Programação Estruturada.
 
-## 🚀 Tecnologias Utilizadas
+## 📂 Estrutura do Repositório
 
-O projeto foi construído utilizando as bases do desenvolvimento Front-End:
+O projeto está organizado para separar as responsabilidades de cada camada do sistema, seguindo boas práticas de desenvolvimento:
 
-* **HTML5:** Estruturação semântica de todas as páginas (Home, Sobre, Serviços, etc).
-* **CSS3:** Estilização visual, layout e responsividade.
-* **Git & GitHub:** Controle de versão e hospedagem do código.
+* **/frontend**: Interface web responsiva para interação com o cliente, construída com HTML5 e CSS3.
+* **/backend-c**: Lógica de processamento, cadastros e rotinas de auditoria desenvolvidas em linguagem C.
+* **/database**: Documentação da arquitetura de dados. Contém o Modelo Conceitual (PDF) e, futuramente, os scripts de implementação SQL.
+* **/docs**: Requisitos detalhados do sistema, regras de negócio e fluxogramas.
 
-## 📁 Estrutura do Projeto
+## 🛠️ Tecnologias e Conceitos Aplicados
 
-O site conta com as seguintes páginas:
-* `index.html`: Página principal com apresentação.
-* `Sobre_nós.html`: História e missão do Petshop.
-* `Serviços.html`: Lista de cuidados oferecidos aos animais.
-* `Produtos.html`: Catálogo de itens disponíveis.
-* `Contato.html`: Formulário de comunicação e localização.
-* `style.css`: Arquivo central de estilos para todo o site.
+* **Linguagem C**: Desenvolvimento da lógica de backend, manipulação de arquivos e sistema de logs.
+* **Web Design**: Interface focada em usabilidade (UI/UX) e acessibilidade.
+* **Bancos de Dados**: Modelagem Entidade-Relacionamento (MER) avançada, cobrindo serviços estéticos e clínicos.
+* **Versionamento Profissional**: Uso de Git e GitHub para controle de fluxo e arquitetura de pastas.
 
-## 🛠️ Como executar o projeto localmente
+## 📝 Descrição do Sistema
+O sistema foi projetado para gerenciar de forma integrada dois segmentos:
+1. **Serviços Estéticos e Hospedagem**: Banho, tosa e creche com controle de capacidade.
+2. **Atendimento Veterinário**: Consultas clínicas, diagnósticos e histórico de prontuários.
 
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/Bruno-Nascimento01/Projeto-Web-html-e-css-para-um-Pet-shop.git](https://github.com/Bruno-Nascimento01/Projeto-Web-html-e-css-para-um-Pet-shop.git)0
+Inclui também módulos de **Vendas e Financeiro** (produtos e serviços) e um sistema de **Auditoria** para rastreabilidade de todas as operações realizadas pelos funcionários.
 
-
+---
+*Projeto em desenvolvimento - Graduação em Ciência da Computação.*
