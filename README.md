@@ -8,7 +8,7 @@ O projeto está organizado para separar as responsabilidades de cada camada do s
 
 * **/frontend**: Interface web responsiva para interação com o cliente, construída com HTML5 e CSS3.
 * **/backend-c**: Lógica de processamento, cadastros e rotinas de auditoria desenvolvidas em linguagem C.
-* **/database**: Documentação da arquitetura de dados. Contém o Modelo Conceitual (PDF) e, futuramente, os scripts de implementação SQL.
+* **/database**: Documentação da arquitetura de dados. Contém o Modelo Conceitual (PDF),Modelo Logico (PDF) e futuramente, os scripts de implementação SQL.
 * **/docs**: Requisitos detalhados do sistema, regras de negócio e fluxogramas.
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
